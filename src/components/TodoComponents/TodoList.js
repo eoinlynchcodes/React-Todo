@@ -1,19 +1,28 @@
 // your components will all go in this `component` directory.
 // feel free to change this component.js into TodoList.js
-import uuid from 'uuid';
 
+import React from 'react';
+import Todo from './Todo';
+import styled from 'styled-components';
 
-const TodoList = [
-    {
-        task: 'Svein\'s Site',
-        id: uuid(),
-        completed: false
-    },
-    {
-        task: 'Fix Car Air Conditioning',
-        id: uuid(),
-        completed: false
-    }
-];
+const Border = styled.div`
+border: 1px solid black;
+`
+  function TodoList(){
 
-export default TodoList;
+    return(
+        <div>
+            <Border>
+            {
+                Todo.map((item, key) => {
+                    return <Border> {item.task} </Border>
+                })
+            }
+            </Border>    
+    
+        </div>
+    )
+  }
+
+  export default TodoList;
+
