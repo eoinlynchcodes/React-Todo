@@ -10,6 +10,11 @@ const Todo = [
         task: 'Fix Car Air Conditioning',
         id: uuid(),
         completed: false
+    },
+    {
+        task: 'Mervyn\'s site',
+        id: uuid(),
+        completed: false
     }
 ];
 
