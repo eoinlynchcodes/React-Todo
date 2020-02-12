@@ -10,12 +10,15 @@ import './Todo.css';
 const Border = styled.div`
 border: 1px solid black;
 `
-  function TodoList(){
+  function TodoList(props){
+      console.log(props.toDoListData);
 
+      // Destructuring props...
+      const { toDoListData } = props; 
     return(
         <Border>
             {
-                Todo.map((item, key) => {
+                toDoListData.map((item, key) => {
                     return <h3> {item.task} </h3>
                 })
             }    
