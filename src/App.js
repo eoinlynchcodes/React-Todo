@@ -15,6 +15,8 @@ class App extends React.Component {
     };
   }
 
+
+
   addToList = event => {
     event.preventDefault();
     const newToDoItem = {
@@ -30,6 +32,17 @@ class App extends React.Component {
     this.setState({ listItem: event.target.value });
     console.log(this.state.listItem);
   };
+
+  toDoComplete = (id) => {
+    this.state.todoList.map((item, key) => {
+      if(id === item.id){
+        return {
+          ...item,
+          completed: true
+        }
+      }
+    })
+  }
 
   render() {
     console.log(this.state.todoList);

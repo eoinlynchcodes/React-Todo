@@ -19,7 +19,7 @@ border: 1px solid black;
         <Border>
             {
                 toDoListData.map((item, key) => {
-                    return <h3> {item.task} </h3>
+                    return <h3 onClick={() => toDoComplete(item.id)}>{item.task}</h3>
                 })
             }    
         </Border>
