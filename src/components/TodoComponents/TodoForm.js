@@ -4,7 +4,7 @@ import './Todo.css';
 function TodoForm(){
     return(
         <div>
-            <form>
+            {/* <form>
                 <h2>Add ToDo List Items here:</h2>
                 <input
                 placeholder="ToDoItem"
@@ -12,7 +12,7 @@ function TodoForm(){
                 />
                 <button>Add</button>
                 <button>Clear List</button>
-            </form>
+            </form> */}
         </div>
     )
 }
